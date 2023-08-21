@@ -6,8 +6,8 @@ body {
 .container-nav {
   background-color: rgb(206, 255, 255);
   border-bottom: 2px dotted white;
-  background: rgb(255, 95, 95);
-  background: linear-gradient(90deg, rgb(95, 194, 255) 24%, rgb(182, 216, 255) 100%);
+  background: rgb(181, 0, 0);
+  /* background: linear-gradient(90deg, rgb(95, 194, 255) 24%, rgb(243, 253, 255) 100%); */
   box-shadow: 0 9px 9px -1px rgba(0, 0, 0, 0.7);
 
 }
