@@ -18,6 +18,50 @@
     margin: 0%;
     padding: 0%;
   }
+
+
+  .container-box-ppt, .container-box{
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+ border-radius: 10px;
+  }
+
+  @media screen and (max-width:460px)
+  {
+
+    .container-box{
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+border-radius: 3px;
+  }
+  .container-box-ppt{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+border-radius: 3px;
+  }
+  }
+
+  #card{
+    padding: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+  }
  </style>
 </head>
 
@@ -56,8 +100,8 @@
   </div>
 
   <section>
-    <div class="container-fluid">
-     
+    <div class="container">
+      <div class="container-box-ppt">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -96,6 +140,53 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="container-box">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center mb-4">
+            <h4 style="color: rgb(181, 0, 0); text-shadow: none; border-bottom: 3px solid rgb(181, 0, 0);;">Our Mission</h4>
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12 my-3">
+            <div class="card" id="card">
+              <img src="vision.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vision</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 my-3">
+            <div class="card" id="card">
+              <img src="value.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Value</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 my-3">
+            <div class="card" id="card">
+              <img src="mission.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mission</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
 
