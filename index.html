@@ -9,6 +9,7 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="header.css">
+   <link rel="stylesheet" href="procedure.css">
  <style>
   body{
     margin: 0%;
@@ -29,7 +30,10 @@
 -moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
  border-radius: 10px;
   }
-
+.container-box-ppt{
+  padding: 5px !important;
+  border-radius: 2px;
+}
   @media screen and (max-width:460px)
   {
 
@@ -43,28 +47,37 @@
 border-radius: 3px;
   }
   .container-box-ppt{
-    padding: 10px;
+    padding: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .carousel-item img{
+    border-radius: 2px;
+    width: 100% !important;
   }
   }
   .carousel-item img{
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
-  #card{
-    padding: 10px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.75);
+  
+  .marquee{
+    padding: 3px; background-color: white; box-shadow: 5px 5px 5px 2px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 14px;
   }
+  .section-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: brown;
+  }
+
+  .card-img img{
+    width: 14rem;
+    padding: 5px;
+    border-radius: 20px;
+  }
+
  </style>
 </head>
 
@@ -101,6 +114,18 @@ border-radius: 3px;
       </div>
     </div>
   </div>
+  <section>
+    <div class="container-fluid card py-2">
+     
+    <div class="container d-flex">
+      
+      <marquee behavior="left" direction="">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa laboriosam libero sed esse, a officiis assumenda repellendus corrupti. Optio iusto cupiditate, beatae ea illo error veniam sed sunt veritatis.
+      </marquee>
+  </div>    
+  </div>
+
+  </section>
 
   <section>
     <div class="container">
@@ -147,29 +172,131 @@ border-radius: 3px;
     </div>
   </section>
 
+   <section>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8 order-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="procedure">
+                <div class="section-title">
+                  <h5>How it Works</h5>
+                  <h2>Choose a program that
+                    strengthen your skillset.</h2>
+                  <div class="divider-design">
+                    <div class="ball">
+  
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div>
+                      <span id="circle">1</span>
+                      <div class="vertical-line"></div>
+                    </div>
+  
+                    <div>
+                      <h4 id="procedure">Vision</h4>
+                      <p>Enroll in the course you are interested and join daily practical session to get most out of the
+                        course.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span id="circle">2</span>
+                      <div class="vertical-line"></div>
+                    </div>
+  
+                    <div>
+                      <h4 id="procedure">Value</h4>
+                      <p>Get one to one mentorship and doubt sessions with module of weekly task and real world to project
+                        to stand out in the industry.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span id="circle">3</span>
+                  
+                    </div>
+  
+                    <div>
+                      <h4 id="procedure">Mission</h4>
+                      <p>
+                        Completion Certificate
+                        Finally earn a industry level certificate.
+                        To know more about coding dude download the free brochure.</p>
+                    </div>
+                  </li>
+  
+                  <li>
+                    <div class="ms-5">
+                      <input type="button" class="btn  mybtn ms-4 " value="Download">
+                    </div>
+  
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 order-md-last order-sm-first order-0" >
+          <div class="card mb-2 ">
+            <div class="card-body" >
+              <h5 class="card-title  d-flex justify-content-center pb-2 ">Notice Board</h5>
+              <h6 class="card-subtitle mb-2 text-muted "></h6>
+              <p class="card p-3  " style="height: 100%;"><marquee behavior="scroll" direction="down">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa laboriosam libero sed esse, a officiis assumenda repellendus corrupti. Optio iusto cupiditate, beatae ea illo error veniam sed sunt veritatis.
+                
+              </marquee></p>
+             
+            </div>
+          </div>
+
+          <div class="card my-2 mt-md-3">
+            <div class="card-body" >
+              <h5 class="card-title  d-flex justify-content-center pb-2 ">News</h5>
+              <h6 class="card-subtitle mb-2 text-muted "></h6>
+              <p class="card p-3  " style="height: 100%;"><marquee behavior="scroll" direction="down">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa laboriosam libero sed esse, a officiis assumenda repellendus corrupti. Optio iusto cupiditate, beatae ea illo error veniam sed sunt veritatis.
+              </marquee></p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+   </section>
+<!-- 
   <section>
     <div class="container">
-      <div class="container-box">
+      <div class="container-box" style="box-shadow: none; border: 1px solid rgba(128, 128, 128, 0.756);">
         <div class="row">
           <div class="col-12 d-flex justify-content-center mb-4">
-            <h4 style="color: rgb(181, 0, 0); text-shadow: none; border-bottom: 3px solid rgb(181, 0, 0);;">OUR MISSION</h4>
+            <span class="section-name">OUR MISSION</span>
           </div>
           <hr>
         </div>
         <div class="row">
           <div class="col-md-4 col-12 my-3">
             <div class="card" id="card">
-              <img src="vision.png" class="card-img-top" alt="...">
+              
               <div class="card-body">
-                <h5 class="card-title">Vision</h5>
+                <div class="card-img"><img src="ps.jpg" alt="" ></div>
+                <h5 class="card-title">
+                  Shri. Prakashdada Solanke. <br>
+                  Hon. President.</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-12 my-3">
+          <div class="col-md-4 col-12 my-3 ">
             <div class="card" id="card">
-              <img src="value.png" class="card-img-top" alt="...">
+             
               <div class="card-body">
                 <h5 class="card-title">Value</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -179,7 +306,7 @@ border-radius: 3px;
           </div>
           <div class="col-md-4 col-12 my-3">
             <div class="card" id="card">
-              <img src="mission.png" class="card-img-top" alt="...">
+             
               <div class="card-body">
                 <h5 class="card-title">Mission</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -191,7 +318,7 @@ border-radius: 3px;
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
