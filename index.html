@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="procedure.css">
   <link rel="stylesheet" href="profile-card.css">
+  <link rel="stylesheet" href="owl-noticeBoard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       margin: 0%;
@@ -258,20 +268,44 @@
           </div>
         </div>
         <div class="col-md-4 order-md-last order-sm-first order-0">
-          <div class="card mb-2 ">
-            <div class="card-body">
-              <h5 class="card-title  d-flex justify-content-center pb-2 ">Notice Board</h5>
-              <h6 class="card-subtitle mb-2 text-muted "></h6>
-              <p class="card p-3  " style="height: 100%;">
-                <marquee behavior="scroll" direction="down">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa laboriosam libero sed esse, a
-                  officiis assumenda repellendus corrupti. Optio iusto cupiditate, beatae ea illo error veniam sed sunt
-                  veritatis.
-
-                </marquee>
-              </p>
-
-            </div>
+          <div class="owl-container mb-2 ">
+            <div class="owl-box">
+              <div class="owl-title">
+                  <span>NOTICE BOARD</span>
+                  <div class="custom-nav">
+                      <!-- Navigation buttons will be automatically added here -->
+                    </div>
+              </div>
+              <div class="owl-carousel owl-theme courses">
+                  <div class="owl-card position-relative overflow-hidden" style="width: auto;">
+                      <div class="owl-card-body">
+                          
+                          <p class="owl-card-text">Some quick example text to build on the card title and make up the bulk
+                              of the
+                              card's content.</p>
+                          <input type="button" value="download" id="owl-noticeBoard-btn">
+                      </div>
+                  </div>
+                  <div class="owl-card position-relative overflow-hidden" style="width: auto;">
+                      <div class="owl-card-body">
+                          
+                          <p class="owl-card-text">Some quick example text to build on the card title and make up the bulk
+                              of the
+                              card's content.</p>
+                          <input type="button" value="download" id="owl-noticeBoard-btn">
+                      </div>
+                  </div>
+                  <div class="owl-card position-relative overflow-hidden" style="width: auto;">
+                      <div class="owl-card-body">
+                          
+                          <p class="owl-card-text">Some quick example text to build on the card title and make up the bulk
+                              of the
+                              card's content.</p>
+                          <input type="button" value="download" id="owl-noticeBoard-btn">
+                      </div>
+                  </div>
+              </div>
+          </div>
           </div>
 
           <div class="card my-2 mt-md-3">
@@ -438,6 +472,37 @@
   <script>
     AOS.init();
   </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    navContainer: '.custom-nav', // Specify the navigation container
+
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
+</script>
 </body>
 </body>
 
