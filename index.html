@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="procedure.css">
   <link rel="stylesheet" href="profile-card.css">
   <link rel="stylesheet" href="owl-noticeBoard.css">
+  <link rel="stylesheet" href="marquee.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
   integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -308,19 +309,18 @@
           </div>
           </div>
 
-          <div class="card my-2 mt-md-3">
-            <div class="card-body">
-              <h5 class="card-title  d-flex justify-content-center pb-2 ">News</h5>
-              <h6 class="card-subtitle mb-2 text-muted "></h6>
-              <p class="card p-3  " style="height: 100%;">
-                <marquee behavior="scroll" direction="down">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa laboriosam libero sed esse, a
-                  officiis assumenda repellendus corrupti. Optio iusto cupiditate, beatae ea illo error veniam sed sunt
-                  veritatis.
-                </marquee>
-              </p>
-
-            </div>
+          <div class="my-2 mt-md-3" id="marquee-container">
+            <div id="marquee-box">
+              <div id="marquee-title">
+                 <span>NEWS</span>
+              </div>
+              <marquee id="myMarquee" behavior="scroll" direction="up">
+                  <div class="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, pariatur? Excepturi, illum quae rem debitis suscipit quas ad. Harum, minus.</div> <br>
+                  <div class="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, pariatur? Excepturi, illum quae rem debitis suscipit quas ad. Harum, minus.</div> <br>
+                  <div class="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, pariatur? Excepturi, illum quae rem debitis suscipit quas ad. Harum, minus.</div> <br>
+                  <div class="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, pariatur? Excepturi, illum quae rem debitis suscipit quas ad. Harum, minus.</div>
+              </marquee>
+          </div>
           </div>
         </div>
       </div>
@@ -469,11 +469,9 @@
     crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
 
-
+<script src="marquee.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
 integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -481,6 +479,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+  AOS.init();
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,

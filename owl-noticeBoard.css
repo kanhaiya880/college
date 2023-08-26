@@ -20,6 +20,7 @@
     color:white
 }
 .owl-title span{
+    font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .owl-card-body{
@@ -54,4 +55,12 @@ margin: 0 10px;
 font-size: 20px;
 cursor: pointer;
 color: rgb(82, 55, 255); 
+}
+
+@media screen and (max-height:710px)
+{
+    .custom-nav button.owl-prev,
+.custom-nav button.owl-next{
+    display: none;
+}
 }
