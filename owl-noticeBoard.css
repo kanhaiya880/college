@@ -5,7 +5,7 @@
 }
 .owl-box{
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
 
     border: 1px solid rgb(206, 206, 206);
 }
@@ -57,10 +57,10 @@ cursor: pointer;
 color: rgb(82, 55, 255); 
 }
 
-@media screen and (max-height:710px)
+/* @media screen and (max-height:710px)
 {
     .custom-nav button.owl-prev,
 .custom-nav button.owl-next{
     display: none;
-}
+} */
 }
