@@ -33,7 +33,7 @@
 }
 
 .container-fluid.bg-dark.footer {
-    background-color: #111111;
+    background-color: #1c475f !important;
 }
 
 .container-fluid.bg-dark.footer a {
@@ -45,7 +45,7 @@
 }
 
 .container-fluid.copyright {
-    background: #111111;
+    background: #000000;
     color: #B0B9AE ;
     
 }
@@ -53,3 +53,4 @@
 .container-fluid.copyright a:hover {
     color: var(--primary) !important;
 }
+

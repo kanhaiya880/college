@@ -112,6 +112,18 @@
       border-radius: 20px;
     }
 
+    #spinner {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease-out, visibility 0s linear .5s;
+            z-index: 99999;
+        }
+
+        #spinner.show {
+            transition: opacity .5s ease-out, visibility 0s linear 0s;
+            visibility: visible;
+            opacity: 1;
+        }
 
 
     .g-5,.g-5{
@@ -121,6 +133,13 @@
 </head>
 
 <body>
+   <!-- Spinner Start -->
+   <div id="spinner"
+   class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+   <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
+
 
   <div class=" container-fluid container-nav">
     <div id="header">
@@ -479,7 +498,7 @@ Introducing technical and professional education for increasing employibility.</
   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <h4 class="text-white mb-4">Our address</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Shri Shivaji Polytechnic Institute, <br> Vasmat Road,
                   Parbhani - 43140</p>
@@ -492,7 +511,7 @@ Introducing technical and professional education for increasing employibility.</
                     <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <h4 class="text-white mb-4">Quick Links</h4>
                 <a class="btn btn-link" href="">Home</a>
                 <a class="btn btn-link" href="">Departments</a>
@@ -500,7 +519,7 @@ Introducing technical and professional education for increasing employibility.</
                 <a class="btn btn-link" href="">Infrastructure</a>
                 <a class="btn btn-link" href="">Contact Us</a>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <h4 class="text-white mb-4">Opening Hours</h4>
                 <p class="mb-1">Monday - Saturday</p>
                 <h6 class="text-light">10:00 am - 5:30 pm</h6>
@@ -509,14 +528,14 @@ Introducing technical and professional education for increasing employibility.</
                 <p class="mb-1">Sunday</p>
                 <h6 class="text-light">Closed</h6>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-4">Newsletter</h4>
                 <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                 <div class="position-relative w-100">
-                    <!-- <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="">
-                    <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button> -->
+                  <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="">
+                    <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -561,7 +580,32 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
 integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
+    "use strict";
+
+// Spinner
+var spinner = function () {
+    var spinnerElement = document.getElementById('spinner');
+    if (spinnerElement) {
+        setTimeout(function () {
+            spinnerElement.classList.remove('show');
+        }, 1000);
+    }
+};
+spinner();
+
+// Hide the spinner when the page finishes loading
+window.addEventListener('load', function () {
+    var spinnerElement = document.getElementById('spinner');
+    if (spinnerElement) {
+        spinnerElement.style.display = 'none';
+    }
+});
+
+// Other JavaScript code...
+
+
   AOS.init();
 
 $('.owl-carousel').owlCarousel({
