@@ -1,9 +1,9 @@
 :root {
-    --primary: #4761FF;
+    --primary: #000000;
 }
 
 .footer {
-    color: #B0B9AE;
+    color: #ffffff;
 }
 
 .footer .btn.btn-link {
@@ -33,11 +33,11 @@
 }
 
 .container-fluid.bg-dark.footer {
-    background-color: #1c475f !important;
+    background-color: rgb(126, 94, 255)!important;
 }
 
 .container-fluid.bg-dark.footer a {
-    color: #B0B9AE ;
+    color: #ffffff ;
 }
 
 .container-fluid.bg-dark.footer a:hover {
