@@ -21,6 +21,8 @@ z-index: 0;
     display: flex;
     list-style-type: none;
     column-gap: 30px;
+    padding-bottom:5px ;
+  
    
   }
   .vertical-line {
@@ -39,7 +41,7 @@ margin-left: 25px;
 
 
 transform: translateX(-50%);
-width: 1px; /* Adjust the width of the line as per your requirement */
+width: 3px; /* Adjust the width of the line as per your requirement */
 height: 100%; /* Adjust the height of the line as per your requirement */
 background-color: rgb(126, 94, 255);/* Change the color as per your requirement */
 }
